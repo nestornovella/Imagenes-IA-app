@@ -8,8 +8,9 @@ module.exports = {
         const { prompt } = req.body
         const headers = {
             "Content-type": "application/json",
-            "Authorization": `Bearer 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`
+            "Authorization": `Bearer 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`
         }
+        
         try {
             if(!!!prompt){
                 throw "No Prompt Found!"
@@ -22,10 +23,8 @@ module.exports = {
             })
 
             const data = await response.json()
-            res.json(data)
-
-
-            
+            res.json(data)       
+                 
         } catch (error) {
             res.status(500).json({error: error.message})
         }

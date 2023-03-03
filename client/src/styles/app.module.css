@@ -1,0 +1,11 @@
+
+.container{
+    
+    display: grid;
+    margin: auto;
+   
+}
+
+.render{
+    width: 98vw;
+}

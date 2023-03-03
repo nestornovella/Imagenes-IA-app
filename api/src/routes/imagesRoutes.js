@@ -3,8 +3,6 @@ const { sendData } = require("../controllers/imagesController")
 
 const router = Router()
 
-router.use("/", sendData)
-
-
+router.post("/", sendData)
 
 module.exports = router

@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    color: white;
+
+}
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searchContainer input{
+    background-color: black;
+    color: white;
+    border: solid rgb(111, 6, 111) 1px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    margin-right: 20px;
+}
