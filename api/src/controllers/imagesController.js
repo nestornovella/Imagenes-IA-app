@@ -8,7 +8,7 @@ module.exports = {
         const { prompt } = req.body
         const headers = {
             "Content-type": "application/json",
-            "Authorization": `Bearer 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`
+            "Authorization": process.env.API_KEY
         }
         
         try {
@@ -23,6 +23,7 @@ module.exports = {
             })
 
             const data = await response.json()
+            console.log(data)
             res.json(data)       
                  
         } catch (error) {

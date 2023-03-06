@@ -19,3 +19,8 @@
     outline: none;
     margin-right: 20px;
 }
+
+.loading{
+    background-color: blue;
+    color: white;
+}

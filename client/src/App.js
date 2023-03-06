@@ -6,19 +6,23 @@ import Styles from "./styles/app.module.css"
 function App() {
 
   const [input, setInput] = useState("")
-
+  const [loading, setLoading] = useState(false)
   function handleInput(input){
     setInput(input)
   }
-  console.log(input)
+
+  function loadingChange (value){
+    setLoading(value)
+  }
+
 
   return (
     <div className={Styles.container}>
       <div>
-        <Search inputFunct={handleInput}/>
+        <Search loading={loading}  inputFunct={handleInput}/>
       </div>
       <div className={Styles.render}>
-        <Render inputValue = {input}/>
+        <Render loadingFunct={loadingChange} inputValue={input}/>
       </div>
     </div>
   );
